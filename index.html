@@ -4,27 +4,134 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUCKOFFIOSIPA扩大iosipa站长肛门</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2, h3, p {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #555;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px auto;
+        }
+
+        p {
+            text-align: center;
+            color: #666;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px auto;
+            display: block;
+            width: calc(100% - 20px);
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px auto;
+            display: block;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .alert {
+            padding: 10px;
+            margin: 10px auto;
+            max-width: 300px;
+            background-color: #ffc107;
+            color: #333;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-   <h1>快速让iosipa站长阐述你的梦</h1>
-   <h2>iosipa下载地址查询</h2>
-<img src="appid.jpg" alt="appid">
-    <hr>
-    </hr>
-    <p>键入APPID：</p>
-    <input type="text" id="queryInput">
-    <button onclick="handleQuery()">一键让IOSIPA站长气急败坏</button>
+   <div class="container">
+       <h1>快速让iosipa站长阐述你的梦</h1>
+       <h2>iosipa下载地址查询</h2>
+       <img src="appid.jpg" alt="appid">
+       <hr>
+       <p>键入APPID：</p>
+       <input type="text" id="queryInput">
+       <button onclick="handleQuery()">一键让IOSIPA站长气急败坏</button>
+       <h3>若出现空白页面则该appid无效</h3>
+       <p>致某些人:没有强迫让你使用，爱给别人送钱我也没办法，好好去护理你们站长肛门</p>
+       <div id="alert" class="alert" style="display: none;">示警！示警！</div>
+   </div>
 
-    <script>
-        function handleQuery() {
-            var inputValue = document.getElementById('queryInput').value;
+   <script>
+       function handleQuery() {
+           var inputValue = document.getElementById('queryInput').value;
+           var url = inputValue + '.html';
 
-            var url = inputValue + '.html';
+           if (inputValue.trim() === '') {
+               showAlert('请输入有效的APPID');
+               return;
+           }
 
-            window.location.href = url;
-        }
-    </script>
-<h3>若出现空白页面则该appid无效</h3>
-<p>致某些人:没有强迫让你使用，爱给别人送钱我也没办法，好好去护理你们站长的屁眼</p>
+           window.location.href = url;
+       }
+
+       function showAlert(message) {
+           var alertDiv = document.getElementById('alert');
+           alertDiv.innerText = message;
+           alertDiv.style.display = 'block';
+
+           setTimeout(function() {
+               alertDiv.style.display = 'none';
+           }, 3000);
+       }
+   </script>
 </body>
 </html>
