@@ -7,7 +7,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f8f8;
+            background-color: #121212;
+            color: #fff;
             margin: 0;
             padding: 0;
         }
@@ -16,9 +17,9 @@
             max-width: 600px;
             margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #1f1f1f;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
         }
 
         h1, h2, h3, p {
@@ -28,12 +29,12 @@
 
         h1 {
             font-size: 28px;
-            color: #333;
+            color: #eee;
         }
 
         h2 {
             font-size: 24px;
-            color: #555;
+            color: #ccc;
         }
 
         img {
@@ -44,13 +45,13 @@
 
         hr {
             border: none;
-            border-top: 1px solid #ccc;
+            border-top: 1px solid #444;
             margin: 20px auto;
         }
 
         p {
             text-align: center;
-            color: #666;
+            color: #999;
         }
 
         input[type="text"] {
@@ -58,9 +59,11 @@
             margin: 10px auto;
             display: block;
             width: calc(100% - 20px);
-            border: 1px solid #ccc;
+            border: 1px solid #666;
             border-radius: 4px;
             box-sizing: border-box;
+            background-color: #333;
+            color: #fff;
         }
 
         button {
@@ -81,7 +84,7 @@
 
         h3 {
             font-size: 18px;
-            color: #333;
+            color: #ccc;
         }
 
         .alert {
@@ -93,17 +96,6 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             text-align: center;
-        }
-
-        .dark-mode-button {
-            padding: 10px 20px;
-            margin: 20px auto;
-            display: block;
-            background-color: #333;
-            color: #fff;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
         }
     </style>
 </head>
@@ -119,7 +111,6 @@
        <h3>若出现空白页面则该appid无效</h3>
        <p>致某些人:没有强迫让你使用，爱给别人送钱我也没办法，好好去护理你们站长肛门</p>
        <div id="alert" class="alert" style="display: none;"></div>
-       <button class="dark-mode-button" onclick="switchToDarkMode()">dark♂模式</button>
    </div>
 
    <script>
@@ -143,10 +134,6 @@
            setTimeout(function() {
                alertDiv.style.display = 'none';
            }, 3000);
-       }
-
-       function switchToDarkMode() {
-           window.location.href = 'dark.html';
        }
    </script>
 </body>
